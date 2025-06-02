@@ -45,3 +45,14 @@ if st.button("Calculate Score") and url:
         st.error(f"HTTP error occurred: {http_err}")
     except Exception as e:
         st.error(f"Something went wrong: {str(e)}")
+
+# Add this at the bottom
+st.markdown(
+    """
+    <hr>
+    <p style='text-align:center; color:gray; font-size:0.9em;'>
+        Made with ❤️ by <strong>Lohith</strong>
+    </p>
+    """,
+    unsafe_allow_html=True
+)
